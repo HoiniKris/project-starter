@@ -2,6 +2,11 @@
 
 
 /* Navbar */
+.navbar {
+	margin: auto;
+	max-width: 1200px;
+}
+
 #navbarNav {
 	flex-grow: 0;
 	margin-right: 100px;
@@ -12,3 +17,233 @@
 	text-align: center;
 }
 
+
+/* Main Content */
+
+.main-content {
+	border: 1px solid red;
+	max-width: 1200px;
+	margin: auto;
+	padding: 20px;
+}
+
+.main-content section {
+	margin-top: 100px;
+}
+
+
+/* Headline */
+
+.main-content .headline {
+	border: 1px solid green;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.main-content .headline-photo {
+	flex: 2;
+	min-width: 500px;
+	position: relative;
+}
+
+.main-content .headline-photo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.main-content .headline-text {
+	position: absolute;
+	bottom: 30px;
+	left: 20px;
+	right: 20px;
+}
+
+.main-content .headline-links {
+	flex: 1;
+	min-width: 300px;
+}
+
+.main-content .headline * {
+	border: 1px solid blue;
+}
+
+
+/* Opinion */
+
+
+.opinion-section .opinions {
+	border: 1px solid purple;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.opinion {
+	border: 1px solid greenyellow;
+	flex: 1;
+	min-width: 300px;
+}
+
+.opinion img {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+}
+
+/* Sport */
+
+.sport-section .sport-content {
+	border: 1px solid pink;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.sport-main {
+	border: 1px solid red;
+	flex: 1;
+	min-width: 300px;
+}
+
+.sport-main img {
+	width: 100%;
+	object-fit: cover;
+}
+
+.sport-links {
+	border: 1px solid blue;
+	flex: 2;
+	min-width: 300px;
+}
+
+/* culture */
+
+.culture-section .culture {
+	border: 1px solid violet;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.culture-main {
+	border: 1px solid blue;
+	flex: 2;
+	min-width: 300px;
+}
+
+.culture-main img {
+	width: 100%;
+	object-fit: cover;
+}
+
+.culture-bottom {
+	border: 1px solid red;
+	flex: 1;
+	min-width: 300px;
+}
+
+.culture-bottom img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+
+/* Lifestyle */
+
+.lifestyle-section .lifestyle {
+ 	border: 1px solid black;
+	height: 300px;
+}
+
+.lifestyle-section .lifestyle .carousel-inner {
+	height: 300px;
+}
+
+.lifestyle-section .lifestyle .carousel-item {
+	height: 300px;
+	position: relative;
+}
+
+.lifestyle-section .lifestyle .carousel-item p {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #EEE;
+	font-size: 1.5rem;
+	position: absolute;
+	bottom: 20px;
+	left: 50px;
+	right: 50px;
+	padding: 5px;
+	text-align: center;
+}
+
+.lifestyle-section .lifestyle .carousel-item p:hover {
+	color: #FFF;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.lifestyle-section .lifestyle .carousel-item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border: 3px solid red;
+}
+
+/* footer */
+
+footer {
+	border: 1px solid blue;
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-main {
+	border: 1px solid red;
+	display: flex;
+}
+
+.footer-left {
+	border: 1px solid rebeccapurple;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer-right {
+	flex: 2;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 30px;
+}
+
+.footer-copyright {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}
+
+.footer-copyright p {
+	margin-bottom: 0;
+}
+
+
+
+
+/* For mobile screens */
+
+@media only screen and (max-width: 600px) {
+
+	.main-content .headline {
+		flex-direction: column;
+	}
+
+	.main-content .headline-photo {
+		min-width: unset;
+	}
+
+	.footer-main {
+		flex-direction: column;
+	}
+
+}
