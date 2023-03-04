@@ -24,6 +24,7 @@
 	border: 1px solid red;
 	max-width: 1200px;
 	margin: auto;
+	margin-bottom: 100px;
 	padding: 20px;
 }
 
@@ -194,6 +195,7 @@ footer {
 	border: 1px solid blue;
 	display: flex;
 	flex-direction: column;
+	background-color: #EDF1D6;
 }
 
 .footer-main {
@@ -207,6 +209,14 @@ footer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding-bottom: 20px;
+
+}
+.footer-left a {
+	text-decoration: none;
+	color: #609966;
+	font-weight: 500;
+
 }
 
 .footer-right {
@@ -214,17 +224,34 @@ footer {
 	display: flex;
 	justify-content: space-evenly;
 	padding: 30px;
+
 }
+
+.footer-right ul li {
+	list-style-type: none;
+
+}
+
+
+.footer-right a {
+	text-decoration: none;
+	color: #609966;
+	font-weight: 500;
+}
+
 
 .footer-copyright {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 10px;
+	background-color: #c8dcbe;
+
 }
 
 .footer-copyright p {
 	margin-bottom: 0;
+	color: #99bd86;
 }
 
 
