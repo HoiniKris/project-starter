@@ -1,8 +1,23 @@
 /* This is your custom CSS file */
 
+:root {
+	--footer-bg-color: #94B49F;
+	--footer-bg-color-copyright: #86a792;
+	--footer-text-color: #DFEEEA;
+	--link-color-hover: #94B49F;
+	--main-content-bg-color: #DFEEEA;
+	--section-bg-color: #faf8f8;
+	--text-color-primary: #333;
+	--text-color-secondary: #EEE;
+	--text-color-secondary-hover: #FFF;
+
+}
+
+
+
 * {
 	font-family: 'Montserrat', sans-serif;
-	color: #333;
+	color: var(--text-color-primary);
 }
 
 section {
@@ -21,7 +36,7 @@ p {
 
 
 a {
-	color: #333;
+	color: var(--text-color-primary);
 	text-decoration: none;
 }
 
@@ -31,7 +46,7 @@ a {
 }
 
 .article-link:hover {
-	color: #94B49F;
+	color: var(--link-color-hover);
 }
 
 
@@ -60,12 +75,12 @@ a {
 	margin: auto;
 	margin-bottom: 100px;
 	padding: 20px;
-	background-color: #DFEEEA;
+	background-color: var(--main-content-bg-color);
 }
 
 .main-content section {
 	margin-top: 100px;
-	background-color: #faf8f8;
+	background-color: var(--section-bg-color);
 }
 
 
@@ -90,11 +105,13 @@ a {
 }
 
 .headline-text a {
-	color:#EEE
+	color: var(--text-color-secondary-hover);
+	background-color: rgba(0, 0, 0, 0.2);
+
 }
 
-.headline-text a:hover {
-	color: #609966;
+.headline-text span {
+	color: var(--text-color-secondary-hover);
 }
 
 
@@ -103,7 +120,7 @@ a {
 	bottom: 30px;
 	left: 20px;
 	right: 20px;
-	color: white;
+	color: var(--text-color-secondary);
 	display: flex;
 	flex-direction: column;
 }
@@ -244,7 +261,7 @@ a {
 
 .lifestyle-section .lifestyle .carousel-item p {
 	background-color: rgba(0, 0, 0, 0.5);
-	color: #EEE;
+	color: var(--text-color-secondary);
 	font-size: 1.5rem;
 	position: absolute;
 	bottom: 20px;
@@ -255,7 +272,7 @@ a {
 }
 
 .lifestyle-section .lifestyle .carousel-item p:hover {
-	color: #FFF;
+	color: var(--text-color-secondary-hover);
 	background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -270,12 +287,12 @@ a {
 footer {
 	display: flex;
 	flex-direction: column;
-	background-color: #94B49F;
+	background-color: var(--footer-bg-color);
 }
 
 footer a {
 	text-decoration: none;
-	color: #DFEEEA;
+	color: var(--footer-text-color);
 	font-weight: 500;
 
 }
@@ -313,13 +330,13 @@ footer a {
 	justify-content: center;
 	align-items: center;
 	padding: 10px;
-	background-color: #86a792;
+	background-color: var(--footer-bg-color-copyright);
 
 }
 
 .footer-copyright p {
 	margin-bottom: 0;
-	color: #DFEEEA;
+	color: var(--footer-text-color);
 }
 
 
