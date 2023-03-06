@@ -5,6 +5,11 @@
 	color: #333;
 }
 
+section {
+	padding: 15px;
+	border-radius: 10px;
+}
+
 section h1 {
 	margin-left: 20px;
 }
@@ -26,7 +31,7 @@ a {
 }
 
 .article-link:hover {
-	color: #609966;
+	color: #94B49F;
 }
 
 
@@ -51,16 +56,16 @@ a {
 /* Main Content */
 
 .main-content {
-	border: 1px solid red;
 	max-width: 1200px;
 	margin: auto;
 	margin-bottom: 100px;
 	padding: 20px;
+	background-color: #DFEEEA;
 }
 
 .main-content section {
 	margin-top: 100px;
-	background-color: #f3f0f0;
+	background-color: #faf8f8;
 }
 
 
@@ -81,7 +86,7 @@ a {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	padding: 2%;
+	padding: 2px;
 }
 
 .headline-text a {
@@ -123,7 +128,6 @@ a {
 
 
 .opinion-section .opinions {
-	border: 1px solid purple;
 	display: flex;
 	flex-wrap: wrap;
 
@@ -191,7 +195,7 @@ a {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 20px;
-	padding: 0.3%;
+	padding: 10px;
 }
 
 .culture-main {
@@ -226,7 +230,6 @@ a {
 /* Lifestyle */
 
 .lifestyle-section .lifestyle {
- 	border: 1px solid black;
 	height: 300px;
 }
 
@@ -267,7 +270,14 @@ a {
 footer {
 	display: flex;
 	flex-direction: column;
-	background-color: #EDF1D6;
+	background-color: #94B49F;
+}
+
+footer a {
+	text-decoration: none;
+	color: #DFEEEA;
+	font-weight: 500;
+
 }
 
 .footer-main {
@@ -282,12 +292,7 @@ footer {
 	padding-bottom: 20px;
 
 }
-.footer-left a {
-	text-decoration: none;
-	color: #609966;
-	font-weight: 500;
 
-}
 
 .footer-right {
 	flex: 2;
@@ -303,25 +308,18 @@ footer {
 }
 
 
-.footer-right a {
-	text-decoration: none;
-	color: #609966;
-	font-weight: 500;
-}
-
-
 .footer-copyright {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 10px;
-	background-color: #c8dcbe;
+	background-color: #86a792;
 
 }
 
 .footer-copyright p {
 	margin-bottom: 0;
-	color: #99bd86;
+	color: #DFEEEA;
 }
 
 
